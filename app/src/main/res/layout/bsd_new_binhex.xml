@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16sp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="New Country"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="16dp"
+        android:text="id #"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/bsd_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="id "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="16dp"
+        android:text="name"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/bsd_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="16dp"
+        android:text="descripcion"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/bsd_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="descripcion"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="16dp"
+        android:text="image"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/bsd_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Image"/>
+
+    <Button
+        android:id="@+id/bsd_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="Add Country"
+        style="@style/listButton"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

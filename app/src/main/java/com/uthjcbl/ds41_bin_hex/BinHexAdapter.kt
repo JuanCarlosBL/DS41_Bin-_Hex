@@ -8,7 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class BinHexAdapter(private var binarios: List<ListaBinHex>): RecyclerView.Adapter<BinHexAdapter.CountryViewHolder>() {
+
+class BinHexAdapter(private var binarios: MutableList<ListaBinHex>): RecyclerView.Adapter<BinHexAdapter.CountryViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CountryViewHolder {
 
         val inflador = LayoutInflater.from(parent.context)
@@ -28,6 +29,10 @@ class BinHexAdapter(private var binarios: List<ListaBinHex>): RecyclerView.Adapt
         return binarios.size
     }
 
+    fun addNewItem(item: ListaBinHex) {
+        binarios.add(item)
+        notifyItemInserted(binarios.size - 1)
+    }
     class CountryViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         val name: TextView = view.findViewById(R.id.binhex_name)
